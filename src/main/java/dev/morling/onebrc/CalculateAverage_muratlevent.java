@@ -84,6 +84,7 @@ public class CalculateAverage_muratlevent {
                 });
 
         Map<String, ResultRow> measurements = new TreeMap<>(Files.lines(Paths.get(FILE))
+                .parallel()
                 .map(l -> new Measurement(l.split(";")))
                 .collect(groupingBy(Measurement::station, collector)));
 
