@@ -15,5 +15,5 @@
 #  limitations under the License.
 #
 
-JAVA_OPTS="--enable-preview -Xmx10g -XX:+AlwaysPreTouch -XX:+UseParallelGC -XX:-OmitStackTraceInFastThrow"
+JAVA_OPTS="--enable-preview -Xms16g -Xmx32g -XX:+AlwaysPreTouch -XX:+UseParallelGC"
 java $JAVA_OPTS --class-path target/average-1.0.0-SNAPSHOT.jar dev.morling.onebrc.CalculateAverage_muratlevent
